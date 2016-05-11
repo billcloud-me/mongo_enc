@@ -1,2 +1,3 @@
 .vagrant
 enc/venv/
+webapp/venv/
