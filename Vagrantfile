@@ -27,8 +27,10 @@ Vagrant.configure(2) do |config|
     mongo.vm.hostname = "mongo"
     mongo.vm.network "private_network", ip: "192.168.50.30"
     mongo.vm.network "forwarded_port", guest: 27017, host: 27017
+    mongo.vm.synced_folder "mongo/", "/mongo"
     mongo.vm.provision "shell", path: "provision.sh"
     mongo.vm.provision "shell", path: "mongo.sh"
+    mongo.vm.provision "shell", path: "addnodes.sh", privileged: false
   end
 
 end
