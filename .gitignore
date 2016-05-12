@@ -1,3 +1,4 @@
 .vagrant
 enc/venv/
 webapp/venv/
+*.pyc
