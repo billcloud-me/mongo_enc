@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Puppet Node Configurator</title>
+    </head>
+    <body>
+        <h1>{{ node }}</h1>
+        <hr>
+        <h2>Classes</h2>
+        <ul>
+        {% for module in classes %}
+        <li>{{ module }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

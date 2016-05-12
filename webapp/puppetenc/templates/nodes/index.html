@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Puppet Node Configurator</title>
+    </head>
+    <body>
+        <h1>Puppet Node Configurator</h1>
+        <hr>
+        <h2>Nodes:</h2>
+        {% if node_list %}
+        <ul>
+            {% for node in node_list %}
+              <li><a href="{{ node.id }}/">{{ node.node }}</a></li>
+            {% endfor %}
+        </ul>
+        {% else %}
+          <p>No Nodes found</p>
+        {% endif %}
+    </body>
+</html>
