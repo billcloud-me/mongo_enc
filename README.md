@@ -7,4 +7,4 @@ This repo is an attempt to develop a POC to see if/how [MongoDB](https://www.mon
 
 ## Diagram
 
-
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
