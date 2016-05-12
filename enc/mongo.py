@@ -17,9 +17,9 @@ def convert(input):
 
 node = sys.argv[1]
 #prod client
-#client = MongoClient('mongo.billcloud.local', 27017)
+client = MongoClient('mongo.billcloud.local', 27017)
 #test client
-client = MongoClient('localhost', 27017)
+#client = MongoClient('localhost', 27017)
 db = client['puppet']
 nodes = db.nodes
 result_id = nodes.find_one({"node": node})
